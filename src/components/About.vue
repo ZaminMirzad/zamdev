@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { NCard } from "naive-ui";
 import { UserGraduate } from "@vicons/fa";
 import { Medal } from "@vicons/tabler";

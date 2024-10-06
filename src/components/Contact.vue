@@ -21,7 +21,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { NButton } from "naive-ui";
 import { Icon } from "@vicons/utils";
 import { Linkedin } from "@vicons/fa";

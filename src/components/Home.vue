@@ -10,7 +10,7 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import About from "./About.vue";
 import Contact from "./Contact.vue";
 import Experiece from "./Experiece.vue";

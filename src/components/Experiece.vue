@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { NCard } from "naive-ui";
 import { Icon } from "@vicons/utils";
 import { skillList } from "../utils";

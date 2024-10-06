@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { NButton } from "naive-ui";
 import { Github, Linkedin } from "@vicons/fa";
 import { Icon } from "@vicons/utils";

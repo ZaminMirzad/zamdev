@@ -25,7 +25,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { projects } from "../utils";
 import ProjectCard from "./ProjectCard.vue";
 </script>
