@@ -6,6 +6,10 @@ export default {
       colors: {
         bluesh: "#55afff",
       },
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
+        Fredoka: ["Fredoka", "sans-serif"],
+      },
     },
   },
   plugins: [],

@@ -4,29 +4,35 @@ import { UserGraduate } from "@vicons/fa";
 import { Medal } from "@vicons/tabler";
 import { Add } from "@vicons/carbon";
 import { Icon } from "@vicons/utils";
+import SectionTitle from "./SectionTitle.vue";
+import profile from "@/assets/profile.png";
 </script>
 
 <template>
   <section
     id="about"
-    class="flex flex-col items-center justify-start gap-4 px-20 py-44 font-fredoka"
+    class="max-w-7xl mx-auto flex flex-col items-center justify-start gap-4 px-6 sm:px-8 md:px-10 lg:px-20 xl:px-20 py-10 sm:py-10 md:py-20 lg:py-52 xl:py-52"
   >
-    <div class="flex flex-col text-center">
+    <!-- <div class="flex flex-col text-center">
       <span class="text-xs">Get to know more</span>
       <h1 class="text-5xl">About Me</h1>
-    </div>
+    </div> -->
+    <SectionTitle smText="Get to know more" lgText="About Me" />
     <div class="flex items-start gap-10 w-full py-20">
       <!-- image -->
-      <div class="min-w-[250px] h-[300px] overflow-hidden rounded-2xl border-8">
-        <img
-          class="h-full w-full object-cover"
-          src="https://plus.unsplash.com/premium_photo-1682096259050-361e2989706d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
+      <div
+        class="hidden sm:hidden md:block lg:block xl:block min-w-[250px] min-h-[300px] h-60 md:h-60 lg:h-96 xl:h-96 aspect-square overflow-hidden rounded-2xl border-8"
+      >
+        <img class="h-full w-full object-cover" :src="profile" />
       </div>
       <!-- details -->
       <div class="">
-        <div class="flex items-start gap-4 pb-6 w-full">
-          <n-card class="flex-1 text-center space-y-5 px-20 py-8 rounded-xl">
+        <div
+          class="flex flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row items-start gap-4 pb-6 w-full"
+        >
+          <n-card
+            class="flex-1 text-center space-y-5 px-2 sm:px-6 md:px-8 lg:px-20 xl:px-20 py-8 rounded-xl"
+          >
             <Icon size="36" class="text-bluesh">
               <Medal />
             </Icon>
@@ -37,7 +43,9 @@ import { Icon } from "@vicons/utils";
             >
             <h3 class="text-lg">Frontend Developer</h3>
           </n-card>
-          <n-card class="flex-1 text-center space-y-5 px-20 py-8 rounded-xl">
+          <n-card
+            class="flex-1 text-center space-y-5 px-2 sm:px-6 md:px-8 lg:px-20 xl:px-20 py-8 rounded-xl"
+          >
             <Icon size="28" class="text-bluesh">
               <UserGraduate />
             </Icon>

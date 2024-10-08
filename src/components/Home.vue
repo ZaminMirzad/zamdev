@@ -1,9 +1,10 @@
 <template>
-  <main class="max-w-7xl mx-auto">
+  <main class="mx-auto font-Fredoka">
     <Header />
     <Hero />
     <About />
-    <Experiece />
+    <Skills />
+    <Experience />
     <Projects />
     <Contact />
     <Footer />
@@ -13,9 +14,10 @@
 <script setup lang="ts">
 import About from "./About.vue";
 import Contact from "./Contact.vue";
-import Experiece from "./Experiece.vue";
+import Skills from "./Skills.vue";
 import Footer from "./Footer.vue";
 import Header from "./Header.vue";
 import Hero from "./Hero.vue";
 import Projects from "./Projects.vue";
+import Experience from "./Experience.vue";
 </script>

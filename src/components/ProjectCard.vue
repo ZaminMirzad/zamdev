@@ -1,5 +1,7 @@
 <template>
-  <n-card class="h-96 w-72 group rounded-xl">
+  <n-card
+    class="h-96 w-6/12 sm:w-5/12 md:w-4/12 lg:w-3/12 group rounded-xl flex-1"
+  >
     <div class="flex flex-col gap-4 w-full h-full">
       <!-- card image -->
       <div class="rounded-lg overflow-hidden h-64">
