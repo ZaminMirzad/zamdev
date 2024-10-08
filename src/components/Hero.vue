@@ -2,22 +2,26 @@
 import { NButton } from "naive-ui";
 import { Github, Linkedin } from "@vicons/fa";
 import { Icon } from "@vicons/utils";
+
+import profile from "@/assets/profile.png";
 </script>
 
 <template>
-  <section id="hero" class="flex items-center justify-center gap-20 py-52">
+  <section
+    id="hero"
+    class="max-w-7xl mx-auto flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row items-center justify-center gap-20 py-10 sm:py-10 md:py-20 lg:py-52 xl:py-52"
+  >
     <!-- image -->
-    <div class="w-[400px] h-[400px] rounded-full overflow-hidden border-8">
-      <img
-        class="w-full h-full object-cover"
-        src="https://plus.unsplash.com/premium_photo-1682096259050-361e2989706d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      />
+    <div
+      class="max-w-[400px] aspect-square w-60 sm:w-60 md:w-72 lg:w-72 xl:w-full rounded-full overflow-hidden border-8"
+    >
+      <img class="w-full h-full object-cover" :src="profile" />
     </div>
 
     <!-- title -->
     <div class="flex flex-col gap-6 justify-center text-center">
       <p class="text-lg">Hello, I'm</p>
-      <h1 class="text-5xl font-semibold">Zamin Mirzad</h1>
+      <h1 class="text-5xl">Zamin Mirzad</h1>
       <p class="">Fronted Developer</p>
       <div class="flex items-center gap-4">
         <n-button tertiary round type="primary" class="font-semibold"
