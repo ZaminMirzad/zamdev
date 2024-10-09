@@ -18,7 +18,7 @@ const handleMenu = (place: DrawerPlacement) => {
 
 <template>
   <div
-    class="max-w-7xl mx-auto  font-Fredoka flex items-center gap-20 justify-between px-6 sm:px-8 md:px-10 lg:px-20 xl:px-20 lg:py-10 py-6  sticky sm:sticky md:flex lg:flex xl:flex top-0 z-50 bg-white"
+    class="max-w-7xl mx-auto font-Fredoka flex items-center gap-20 justify-between px-6 sm:px-8 md:px-10 lg:px-20 xl:px-20 lg:py-10 py-3 sticky sm:sticky md:flex lg:flex xl:flex top-0 z-50 bg-white dark:bg-dark dark:text-white/90"
   >
     <a class="text-4xl lg:text-5xl" href="/"> Zamin Mirzad </a>
     <ul class="hidden sm:hidden md:flex lg:flex items-center gap-4">
@@ -43,7 +43,7 @@ const handleMenu = (place: DrawerPlacement) => {
     <n-drawer
       v-model:show="isOpen"
       :placement="placement"
-      class="p-0 flex flex-col h-fit"
+      class="p-0 flex flex-col h-fit dark:bg-black dark:text-white/90"
     >
       <n-drawer-content class="w-full h-fit py-2">
         <div class="w-full text-end flex justify-center mb-2">

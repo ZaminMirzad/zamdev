@@ -1,6 +1,7 @@
 <template>
   <n-card
-    class="h-96 w-6/12 sm:w-5/12 md:w-4/12 lg:w-3/12 group rounded-xl flex-1"
+    :bordered="false"
+    class="h-96 w-6/12 sm:w-5/12 md:w-4/12 lg:w-3/12 group rounded-xl flex-1 dark:bg-black dark:text-white/90 border dark:border-gray-900"
   >
     <div class="flex flex-col gap-4 w-full h-full">
       <!-- card image -->
@@ -15,7 +16,10 @@
       <div class="text-center">
         <h4 class="text-lg capitalize line-clamp-1">{{ title }}</h4>
         <div class="flex items-center gap-4 pt-2 justify-center">
-          <n-button class="flex items-center rounded-md" secondary>
+          <n-button
+            class="flex items-center rounded-md dark:text-white"
+            secondary
+          >
             <Icon size="20" class="mr-2">
               <LogoGithub />
             </Icon>
