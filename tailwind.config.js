@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         bluesh: "#55afff",
+        dark: "#090909",
       },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],

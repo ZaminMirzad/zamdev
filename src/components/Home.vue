@@ -1,5 +1,5 @@
 <template>
-  <main class="mx-auto font-Fredoka">
+  <main class="mx-auto font-Fredoka dark:bg-dark dark:text-white">
     <Header />
     <Hero />
     <About />

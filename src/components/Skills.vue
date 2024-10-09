@@ -9,7 +9,7 @@ import SectionTitle from "./SectionTitle.vue";
 <template>
   <section
     id="skills"
-    class="flex flex-col items-center gap-20 px-6 sm:px-8 md:px-10 lg:px-20 xl:px-20 py-10 sm:py-10 md:py-20 lg:py-52 xl:py-52"
+    class="flex flex-col items-center gap-20 px-6 sm:px-8 md:px-10 lg:px-20 xl:px-20 py-10 pt-20 sm:py-10 md:py-20 lg:py-52 xl:py-52"
   >
     <SectionTitle smText="Explore my" lgText="Skills" />
 
@@ -18,7 +18,8 @@ import SectionTitle from "./SectionTitle.vue";
       class="max-w-7xl mx-auto flex flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row items-center gap-10"
     >
       <n-card
-        class="flex-1 text-center space-y-5 px-2 sm:px-6 md:px-8 lg:px-10 xl:px-20 py-4 rounded-xl"
+        :bordered="false"
+        class="flex-1 text-center space-y-5 px-2 sm:px-6 md:px-8 lg:px-10 xl:px-20 py-4 rounded-xl border dark:border-gray-900 dark:bg-black dark:text-white/80"
       >
         <h3 class="text-2xl">Frontend Development</h3>
         <!-- skills -->
@@ -41,7 +42,8 @@ import SectionTitle from "./SectionTitle.vue";
         </div>
       </n-card>
       <n-card
-        class="flex-1 text-center space-y-5 px-2 sm:px-6 md:px-8 lg:px-10 xl:px-20 py-4 rounded-xl"
+        :bordered="false"
+        class="flex-1 text-center space-y-5 px-2 sm:px-6 md:px-8 lg:px-10 xl:px-20 py-4 rounded-xl border dark:border-gray-900 dark:bg-black dark:text-white/80"
       >
         <h3 class="text-2xl">Backend Development</h3>
         <!-- skills -->
