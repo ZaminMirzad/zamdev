@@ -17,25 +17,30 @@
         <h4 class="text-lg capitalize line-clamp-1">{{ title }}</h4>
         <div class="flex items-center gap-4 pt-2 justify-center">
           <n-button
-            class="flex items-center rounded-md dark:text-white"
+          
             secondary
           >
-            <Icon size="20" class="mr-2">
-              <LogoGithub />
-            </Icon>
-            GitHub</n-button
-          >
+            <a   class="flex items-center rounded-md dark:text-white" :href="githubLink" target="_blank">
+              <Icon size="20" class="mr-2">
+                <LogoGithub />
+              </Icon>
+              GitHub
+            </a>
+          </n-button>
           <n-button
-            class="flex items-center rounded-md"
+           
             type="info"
             strong
             secondary
+            
           >
-            <Icon size="20" class="mr-2">
-              <LivePhoto />
-            </Icon>
+            <a :href="liveDemoLink" target="_blank"  class="flex items-center rounded-md">
 
-            Live Demo
+              <Icon size="20" class="mr-2">
+                <LivePhoto />
+              </Icon>
+              Live Demo
+            </a>
           </n-button>
         </div>
       </div>
@@ -48,6 +53,9 @@ import { NButton, NCard } from "naive-ui";
 import { Icon } from "@vicons/utils";
 import { LogoGithub } from "@vicons/carbon";
 import { LivePhoto } from "@vicons/tabler";
+
+
+
 
 defineProps({
   title: String,
